@@ -76,4 +76,6 @@ df.head()
 print(df)
 df
 
-df.to_csv('\out.csv')
+# Extract date of update
+last_updated = soup.find("h2", text=re.compile(r"England")).find_next_sibling("h3").get_text(strip=True)
+print(last_updated)
