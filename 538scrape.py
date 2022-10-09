@@ -21,7 +21,7 @@ import csv
 import os
 
 # Site URL
-url="https://projects.fivethirtyeight.com/soccer-predictions/premier-league/"
+url="https://web.archive.org/web/20220903151510/https://projects.fivethirtyeight.com/soccer-predictions/premier-league/"
 
 # GET request to fetch the raw html content
 html_content = requests.get(url).text
